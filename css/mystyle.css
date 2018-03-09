@@ -11,8 +11,6 @@ body, html {
 	font-family: Basic;
 	font-size: 22px;
 	height: 100%;
-	/* display: flex; */
-	/* flex-direction: column; */
 }
 
 .header {
@@ -37,7 +35,7 @@ body, html {
 	.navbar_left {
 		display: flex;
 		background-color: #8BA6A9;
-		flex-basis: 30%;
+		flex:1;
 	}
 
 	.navbar_left a {
@@ -52,52 +50,47 @@ body, html {
 		color: black;
 	}
 
-	.navbar_center{
-		display: flex;
-		background-color: #8BA6A9;
-		flex-basis: 50%;
-		justify-content: center;
-		white-space: nowrap;
-		margin: auto;
-	}
-
 	.navbar_right{
+		padding: 0px 10px;
 		background-color: #8BA6A9;
 		font-size:36px;
-		flex-basis: 30%;
 		text-align: right;
 	}
 	
 	.navbar_right a {
-		padding: 5px 20px;
+		padding: 5px 5px;
 		vertical-align: middle;
 		text-decoration: none;
 		text-align: center;
 	}
 	
 	.navbar_right a:hover {
-		background-color: #9BBDF9;
 		color: black;
 	}
 
 .main_row{
 	background-color: white;
-	padding: 70px 150px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	padding: 8%;
 }
 
 .main_row_a{
 	flex-basis:55%;
+	padding: 3%;
+	padding-bottom: 8%;
 }
+
 .main_row_b{
 	flex-basis:42%;
 	text-align: center;
 }
+
+.main_row_b img{
+	border-radius: 10px;
+}
+
 .main_row_item{
 	margin: 40px 0px;
-	padding:0px 20px;
+	padding: 1px 20px;
 	border-left: 6px solid #454545;
 	flex-basis:31%;
 }
@@ -126,4 +119,19 @@ body, html {
 }
 .fa:hover {
 	color:black;
+}
+
+@media (min-width:1100px){
+	.main_row {
+		padding: 70px 150px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width:500px){
+	.footer {
+		font-size: 18px;
+	}
 }
