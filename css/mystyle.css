@@ -86,6 +86,7 @@ body, html {
 
 .main_row_b img{
 	border-radius: 10px;
+	width: 360px;
 }
 
 .main_row_item{
@@ -133,5 +134,8 @@ body, html {
 @media (max-width:500px){
 	.footer {
 		font-size: 18px;
+	}
+	.main_row_b img{
+		width: 100%;
 	}
 }
